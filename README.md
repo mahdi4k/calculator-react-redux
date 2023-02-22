@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-simple calculator developed with react and redux.
+Simple calculator developed with react and redux.
 ## Available Scripts
 
 In the project directory, you can run:
