@@ -12,7 +12,6 @@ let initialState = {
 
 export const calculatorReducer = (state = initialState, action) => {
   let { type, payload } = action;
-
   switch (type) {
     case LOAD_BUTTONS:
       return {
@@ -27,7 +26,7 @@ export const calculatorReducer = (state = initialState, action) => {
         return {
           ...state,
           ...payload,
-          ans: eval(state.number).toString(),
+          ans: Function(`return ${state.number}`)(),
         };
       } catch (err) {
         return {
